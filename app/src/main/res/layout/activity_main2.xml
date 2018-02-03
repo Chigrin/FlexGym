@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.flexgym.Main2Activity"
+    android:fillViewport="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#F2000000"
+        >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            app:srcCompat="@drawable/winner_den" />
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="200dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            app:srcCompat="@drawable/baby_sergey" />
+
+        <Button
+            android:onClick="back"
+            android:alpha="0.7"
+            android:background="#000000"
+            android:text="back"
+            android:textAllCaps="true"
+            android:textColor="#FFFFFF"
+            android:textSize="30sp"
+            android:layout_width="176dp"
+            android:layout_height="55dp"
+            android:layout_alignParentBottom="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Денис! Ты лучший!"
+            android:textColor="#EEEEEE"
+            android:layout_alignParentRight="true"
+            android:textSize="24sp"
+            android:textAllCaps="true"
+            android:layout_margin="16dp"
+            android:textStyle="bold"
+           />
+
+
+    </RelativeLayout>
+
+
+
+</ScrollView>
