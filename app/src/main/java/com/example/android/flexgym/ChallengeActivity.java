@@ -19,7 +19,7 @@ public class ChallengeActivity extends AppCompatActivity {
 
     public void sergey_beer_button(View v) {
         if (sergey_score <= 2) {
-            Toast.makeText(this, "Сначала покушай!", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, R.string.eat, Toast.LENGTH_SHORT).show();
             return;
         }
         Toast.makeText(this, "Серёга! Алкоголь вреден для здоровья, ты же знаешь! -3 очка", Toast.LENGTH_SHORT).show();
@@ -29,7 +29,7 @@ public class ChallengeActivity extends AppCompatActivity {
 
     public void sergey_club_button(View v) {
         if (sergey_score <= 1) {
-            Toast.makeText(this, "Сначала сходи в зал", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, R.string.gym, Toast.LENGTH_SHORT).show();
             return;
         }
         Toast.makeText(this, "Серёга! Ты снова всю ночь не спал и орал в караоке! -2 очка", Toast.LENGTH_SHORT).show();
@@ -71,7 +71,7 @@ public class ChallengeActivity extends AppCompatActivity {
 
     public void sergey_love_button(View v) {
         if (sergey_score == 0) {
-            Toast.makeText(this, "Сначала поспи", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, R.string.sleep, Toast.LENGTH_SHORT).show();
             return;        }
         Toast.makeText(this, "Серёга! Ты всю ночь не спал, машина! Но мышцы не восстановились -1 очко", Toast.LENGTH_SHORT).show();
         sergey_score = sergey_score - 1;
@@ -91,7 +91,7 @@ public class ChallengeActivity extends AppCompatActivity {
 
     public void den_beer_button(View v) {
         if (den_score <= 2) {
-            Toast.makeText(this, "Сначала покушай!", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, R.string.eat, Toast.LENGTH_SHORT).show();
             return;
         }
         Toast.makeText(this, "Дениск! Ты же не пьёшь! -3 очка", Toast.LENGTH_SHORT).show();
@@ -101,7 +101,7 @@ public class ChallengeActivity extends AppCompatActivity {
 
     public void den_club_button(View v) {
         if (den_score <= 1) {
-            Toast.makeText(this, "Сначала сходи в зал", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, R.string.gym, Toast.LENGTH_SHORT).show();
             return;
         }
         Toast.makeText(this, "Дениска клаббер! Редко но метко! -2 очка", Toast.LENGTH_SHORT).show();
@@ -132,7 +132,7 @@ public class ChallengeActivity extends AppCompatActivity {
 
     public void den_sleep_button(View v) {
         if (den_score >= 9) {
-            displayForSergey(den_score = 10);
+            displayForDen(den_score = 10);
         }
         else {
             Toast.makeText(this, "Во сне мышцы восстанавливаются! +1 очко", Toast.LENGTH_SHORT).show();
@@ -143,7 +143,7 @@ public class ChallengeActivity extends AppCompatActivity {
 
     public void den_love_button(View v) {
         if (den_score == 0) {
-            Toast.makeText(this, "Сначала поспи", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, R.string.sleep, Toast.LENGTH_SHORT).show();
             return;
         }
         Toast.makeText(this, "Дениск! Ты женат, так что, если только с женой! Мышцы не восстановились -1 очко", Toast.LENGTH_SHORT).show();
